@@ -1,0 +1,24 @@
+header {
+    width: 100%;
+    height: 4em;
+    background: rgb(50,50,50);
+}
+
+.header-fixed {
+    color: white;
+    width: 100%;
+    height: 4em;
+    padding: 0 1em;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    top: 0;
+    left: 0;
+    background: rgb(0,0,0,0.7);
+    backdrop-filter: blur(8px);
+}
+
+.header-logo {
+    height: 35px;
+    padding: 8px;
+}

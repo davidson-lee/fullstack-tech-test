@@ -1,0 +1,44 @@
+.movie-container {
+    flex-grow: 1;
+    width: calc(33% - 9em);
+    padding: 2em 3em;
+    min-height: 20rem;
+    margin: 1em;
+    background: linear-gradient(to right, rgb(255,72,34) 2%, rgba(0,0,0,0.95) 2%);
+    color: white;
+    margin-top: 1rem;
+    border-radius: 1rem;
+    transition: width 0.5s;
+}
+
+.movie-container:hover {
+    background: linear-gradient(to right, rgb(255,72,34) 2%, rgba(0,0,0,1) 2%);
+}
+
+.movie-title:hover {
+    cursor: pointer;
+}
+
+.fullsize {
+    width: calc(100% - 6em) !important;
+}
+
+.show-button {
+    margin-top: 2rem;
+    color: black;
+    display: inline-block;
+    background: white;
+    padding: 0.7rem 1.5rem;
+    line-height: 1rem;
+    border-radius: 0.5rem;
+}
+
+.show-button:hover {
+    cursor: pointer;
+}
+
+.film-icon {
+    float: right;
+    height: 50px;
+    filter: invert(100%);
+}
