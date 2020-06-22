@@ -57,12 +57,13 @@ function App() {
                         movies
                             ?
                             movies.map((movie, order) => {
+                                console.log(movie, order)
                                 return ((order + 1) % 3 === 1)
                                     ?
                                         <div key={'row' + (order + 1)}className='flex-row' style={{width: '100%', marginTop: '2rem'}}>
                                             <Movie order={0} movie={movies[order]} key={movies[order].id}/>
-                                            <Movie order={1} movie={movies[order + 1]} key={movies[order + 1].id}/>
-                                            <Movie order={2} movie={movies[order + 2]} key={movies[order + 2].id}/>
+                                            { movies[order + 1] ? <Movie order={1} movie={movies[order + 1]} key={movies[order + 1].id}/> : null }
+                                            { movies[order + 2] ? <Movie order={2} movie={movies[order + 2]} key={movies[order + 2].id}/> : null }
                                         </div>
                                     : 
                                         null
